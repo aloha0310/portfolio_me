@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap')
+    
+@import "../src/sass/base/variables"
+@import "../src/sass/base/mixins"
+
+* 
+    font-family: 'Poppins', sans-serif
+    margin: 0
+    padding: 0
+
+.container
+    width: 1140px
+    margin: 0 auto
+.line
+    height: 2px
+    width: 60px
+    background-color: $main_color
+    margin: 25px auto 0 auto
+
+.title__head
+    margin: 70px auto
+    text-align: center
+    h3
+        position: relative
+        @include before_circle
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+
+@import "../src/sass/blocks/one"
+@import "../src/sass/blocks/title"
+@import "../src/sass/blocks/button"
+@import "../src/sass/blocks/sidepanel"
+@import "../src/sass/blocks/two"
+@import "../src/sass/blocks/menu"
+@import "../src/sass/blocks/two"
+@import "../src/sass/blocks/three"
+@import "../src/sass/blocks/four"
+@import "../src/sass/blocks/five"
+@import "../src/sass/blocks/six"
+@import "../src/sass/blocks/media"

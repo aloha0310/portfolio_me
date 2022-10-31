@@ -1,0 +1,51 @@
+.contacts
+    .hamburger
+        position: absolute
+        right: 40px
+        top: 20px
+        cursor: pointer
+        span
+            font-size: 40px
+    &__title
+        margin-top: 70px
+        margin-bottom: 70px
+    .containers
+        background-color: $main_color
+        padding: 50px
+    &__grid
+        width: 80%
+        background-color: #fff
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 100%
+        column-gap: 50px
+        margin: 0 auto
+        &__foto
+            display: flex
+            align-items: center
+            justify-content: center
+            object-fit: cover
+            img
+                width: 400px
+        &__info
+            padding-top: 50px
+            width: 400px
+    &__social
+        display: flex
+        justify-content: space-evenly
+        margin: 30px 0 30px 0
+    &__link
+        img
+            width: 34px
+    &__txt
+        font-size: 20px
+    &__form
+        input
+            display: flex
+            width: 200px
+            text-align: center
+            margin: 15px auto 15px auto
+            border: none
+            border-bottom: 1px solid
+
+            

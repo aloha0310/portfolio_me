@@ -1,0 +1,34 @@
+.five
+    &__price
+        position: relative
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: minmax(44px, auto)
+        grid-auto-rows: minmax(44px, auto)
+        row-gap: 50px
+        column-gap: 170px
+        
+        &__line
+            position: absolute
+            width: 1px
+            height: 100%
+            background-color: $main_black
+            left: 50%
+            transform: translateX(-50%)
+        &__item
+            &__flex
+                display: flex
+                font-weight: 700
+                .img
+                    position: relative
+                    @include before_circle
+                    img
+                        height: 25px
+                        margin: 0 20px 0 20px
+                .many
+                    margin-left: auto
+                    margin-right: 0
+            .text
+                margin-left: 20px
+                    
+                

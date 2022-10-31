@@ -1,0 +1,36 @@
+.one
+    min-height: 100vh
+    position: relative
+    background: url('../src/img/1.jpg') no-repeat 50%/cover
+    padding-top: 130px
+    color: $main_white
+    &__title
+        width: 535px
+        margin-top: 10px
+    &__subtitle
+        position: relative
+        padding-left: 10px
+        z-index: 2
+        @include before_circle
+    &__btns
+        margin-top: 25px
+        display: flex
+        width: 250px
+        align-items: center
+        justify-content: space-between
+    &__link
+        color: $main_white
+        text-decoration: none
+        font-weight: bold
+        transition: all 0.6s
+        &:hover
+            color: white
+            text-decoration: none
+            transform: scale(1.1)
+    .language
+        display: block
+        position: absolute
+        top: 10px
+        right: 135px
+        img
+            height: 41px

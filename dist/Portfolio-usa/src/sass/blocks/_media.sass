@@ -1,0 +1,220 @@
+@media ( max-width: 1400px )
+    .sidepanel
+        transform: rotate(-90deg) translate(-55%, -280%)
+@media ( max-width: 1300px )
+    .sidepanel
+        display: none
+    
+@media ( max-width: 1200px )
+    .container
+        max-width: 960px
+    .two
+        &__wrapper
+            grid-template-columns: 400px 520px
+            column-gap: 40px
+        &__skills
+            column-gap: 20px
+            grid-template: repeat(2, minmax(115px,auto)) / repeat(2, 250px)
+            &-item
+                grid-template-columns: 40px 195px
+                column-gap: 15px
+    .three
+        &__skills
+            grid-template-columns: repeat(3, 1fr)
+        &__percent
+            grid-template-columns: repeat(2, 1fr)
+    .four
+        &__item
+            &-ankorige
+                grid-column: unset
+        &__work
+            grid-template-columns: repeat(auto-fit, 280px)
+            grid-auto-rows: 280px
+            justify-content: space-around
+            row-gap: 35 px
+    .five
+        &__price
+            column-gap: 50px
+            &__item
+                &__flex
+                    font-size: 14px
+            .text
+                font-size: 14px
+    .six
+        padding: 90px 0 40px 0
+        &__wrapper
+            padding: 0
+            grid-template-columns: 400px 1fr
+            column-gap: 20px
+        &__form
+            grid-template-columns:  repeat(2, 250px)
+
+
+@media ( max-width: 992px )
+    .container
+        max-width: 720px
+    .title
+        &_fz36
+            font-size: 30px
+    .one 
+        padding-top: 300px  
+        background: url('../src/img/1.jpg') no-repeat 70%/cover
+    .two
+        &__wrapper
+            grid-template-columns: 300px 380px
+        &__skills
+            grid-template-columns: 380px
+            grid-auto-rows: minmax(115px,auto)
+            &-item
+                grid-template-columns: 40px 320px
+                column-gap: 20px
+    .five
+        .title__head
+            margin: 40px auto
+        &__price
+            column-gap: 35px
+            row-gap: 30px
+            &__item
+                &__flex
+                    font-size: 14px
+                    .img
+                        @include before_circle
+                        &::before
+                            width: 25px
+                            height: 25px
+                            left: 5px
+                            top: -13px 
+                        img
+                            height: 20px
+                            margin: 0
+                            margin-right: 9px                  
+            .text
+                font-size: 13px
+                margin-left: 0
+    .six
+        padding: 40px 0 40px 0
+        &__wrapper
+            display: block
+        &__photo
+            display: none
+        &__form
+            grid-template-columns: repeat(2, 1fr)
+            column-gap: 30px
+
+@media ( max-width: 768px )
+    .container
+        max-width: 540px
+
+    .title
+        &_fz48
+            font-size: 30px
+    .one
+        background: url('../src/img/1.jpg') no-repeat 65%/cover
+        &__title
+            width: 300px
+            line-height: 39px
+    .two
+        padding-top: 40px
+        &__wrapper
+            grid-template: 488px auto auto/1fr
+        &__photo
+            grid-row: unset
+        &__skills
+            grid-template-columns: repeat(2, 260px)
+            &-item
+                grid-template-columns: 40px 200px
+                column-gap: 20px
+    .three
+        .title__head
+            margin: 40px auto
+        &__skills
+            grid-template-columns: repeat(2, 1fr)
+
+    .four
+        .title__head
+            margin: 40px auto
+    .five
+        &__price
+            grid-template-columns: 1fr
+            &__line
+                display: none
+            &__item
+                &__flex
+                    font-size: 16px
+                    .img
+                        @include before_circle
+                        &::before
+                            width: 36px
+                            height: 36px
+                            left: 0
+                            top: -13px
+                        img
+                            height: 25px
+                            margin: 0 20px 0 20px
+                .text
+                    margin-left: 25px
+                    margin-top: 3px
+ 
+@media ( max-width: 576px )
+    .container
+        max-width: 100%
+        padding: 0 10px
+        .title
+            &_fz48
+                font-size: 26px
+            &_fz36
+                font-size: 24px
+    .one
+        padding-top: 130px
+        background: url('../src/img/1.jpg') no-repeat 66%/cover
+        &__btns
+            margin-top: 32px
+    .menu
+        &__block
+            width: 250px
+            padding-left: 20px
+    .two
+        &__wrapper
+            grid-template: 355px auto auto/1fr
+        &__skills
+            grid-template-columns: 1fr
+    .three
+        &__skills
+            grid-template-columns: repeat(1, 1fr)
+        &__percent
+            grid-template-columns: repeat(1, 1fr)
+    .five
+        &__price
+            &__item
+                &__flex
+                    font-size: 14px
+                    .img
+                        left: 0
+                        @include before_circle
+                        &::before
+                            width: 25px
+                            height: 25px
+                            left: 5px
+                            top: -13px                       
+                        img
+                            width: 20px
+                            height: 20px
+                            margin: 0
+                            margin-right: 9px
+                .text
+                    font-size: 12px
+    .six
+        &__form
+            margin-top: 20px
+            gap: 20px
+        &__triggers
+            display: block
+        &__policy
+            margin: 15px 0 15px 0
+        &__text
+            margin-top: 10px
+        &__social
+            margin-top: 10px
+        &__link
+            margin-right: 25px
+    

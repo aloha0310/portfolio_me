@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
+    
+    <!--шрифт-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!--google icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+    
+    <!--boodstrep-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Контакты</title>
+
+</head>
+<body>
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close"><span class="material-symbols-outlined">
+                    close
+                </span></div>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="index.html">Главная</a></li>
+                    <div class="dropdown">
+                        <button class="  menu__link menu__link__button" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Галерея
+                        </button>
+                        <ul class="dropdown-menu menu__link ">
+                            <li><a class="dropdown-item " href="_music.html">О музыкантах</a></li>
+                            <li><a class="dropdown-item " href="_architecture.html">Монохромная архитектура</a></li>
+                            <li><a class="dropdown-item " href="_portrait.html">Портрет</a></li>
+                        </ul>
+                    </div>
+                    <li class="menu__link"><a href="_about.html">Обо мне</a></li>
+                    <li class="menu__link"><a href="_contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="menu__social">
+                <a href="https://vk.me/ampwizard"><img src="src/icons/vk.png" alt="vk"></a>
+                <a href="https://t.me/ampwizard"><img src="src/icons/telegram.png" alt="telegram"></a>
+                <a href="https://wa.me/79857459418"><img src="src/icons/whatsapp.png" alt="whatcapp"></a>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+
+    <section class="contacts">
+        <div class="hamburger"><span class="material-symbols-outlined">menu</span></div>
+
+        <div class="contacts__title">
+            <h2 class="title">Podrezoff & Photographer</h2>
+        </div>
+        <div class="containers">
+            <div class="contacts__grid">
+                <div class="contacts__grid__foto"><img src="src/img/about.jpg" alt="foto"></div>
+                <div class="contacts__grid__info">
+                    <h2 class="title">Контакты</h2>
+                    <h3 class="subtitle contacts__txt">Свяжитесь со мной <br> любым удобным для вас способом</h3>
+                    <div class="contacts__social">
+                        <a href="https://wa.me/79857459418" class="contacts__link"><img src="src/icons/whatsapp.png" alt="whatsapp"></a>
+                        <a href="https://vk.me/ampwizard" class="contacts__link"><img src="src/icons/vk.png" alt="vk"></a>
+                        <a href="https://t.me/ampwizard" class="contacts__link"><img src="src/icons/telegram.png" alt="telegram"></a>
+                    </div>
+                    <div class="subtitle contacts__txt">Или оставьте Ваши данные и я сам Вам напишу:</div>
+                    <form action="src/mailer/smart.php" class="contacts__form" method="POST">
+                        <input required name="name" placeholder="Имя" id="name" type="text">
+                        <input required name="phone" placeholder="Телефон" id="phone" type="number">
+                        <input required name="email" placeholder="Почта" id="email" type="email">
+                        <button data-modal="modal" class="button button_main">Оставить заявку</button>
+                    </form>
+                    <div style="font-size:10px ; color: black;">*Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                        соглашаетесь c политикой конфиденциальности.
+                        <a href="_privacy.html">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="src/js/script.js"></script>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>
